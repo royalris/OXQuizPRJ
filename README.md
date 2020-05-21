@@ -1,2 +1,2 @@
 # OXQuizPRJ
- For Progject
+ For Project
