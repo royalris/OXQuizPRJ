@@ -25,7 +25,7 @@ public class QuestionsLoader : MonoBehaviour
         }
         for (int i = 0; i < quests.Count; i++)
         {
-            if(quests[i].catagory == _category)
+            //if(quests[i].catagory == _category)
             {
                 send.Add(quests[i]);
             }

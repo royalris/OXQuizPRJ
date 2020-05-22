@@ -5,26 +5,30 @@ using UnityEngine.UI;
 
 public  class Inventory : MonoBehaviour
 {
-    private int gold = 0;
+
+    [Header("내 용사들과 재화를 당담하는 스크립트")]
+
+    [Tooltip("골드 재화")]
+    public int gold = 0;
+    [Tooltip("보석 재화")]
     public int jewel = 500;
+    [Tooltip("나의 보유 용사")]
     public List<GameObject> my_hero_list = new List<GameObject>();
 
-    public GameObject my_gold_UI;
-    public GameObject my_jewel_UI;
+    [Space(25)]
+    [Header("재화 보유량을 표기해줄 텍스트")]
+    [Tooltip("GoldAmountTxt 라고 적혀 있는 것을 넣어주세요")]
+    public Text my_gold_textbox;
+    [Tooltip("JewelAmountTxt 라고 적혀 있는 것을 넣어주세요")]
+    public Text my_jewel_textbox;
 
-    private Text my_gold_text;
-    private Text my_jewel_text;
-
-    private void Awake()
-    {
-        my_gold_text = my_gold_UI.transform.GetChild(1).GetComponent<Text>();
-        my_jewel_text = my_jewel_UI.transform.GetChild(1).GetComponent<Text>();
-    }
 
     private void Start()
     {
         RefreshUI();
     }
+
+    #region "재화의 보유량 변동 관련"
 
     public void AddGold(int amount)
     {
@@ -54,10 +58,13 @@ public  class Inventory : MonoBehaviour
         RefreshUI();
     }
 
-    public void RefreshUI()
+    #endregion
+
+
+    public void RefreshUI() //재화가 바뀔때마다 호출 되도록 할것
     {
-        my_gold_text.text = gold.ToString();
-        my_jewel_text.text = jewel.ToString();
+        my_gold_textbox.text = gold.ToString();
+        my_jewel_textbox.text = jewel.ToString();
     }
 
     public void AddHero(GameObject hero)

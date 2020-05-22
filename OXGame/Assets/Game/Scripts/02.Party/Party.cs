@@ -8,12 +8,17 @@ public class Party : MonoBehaviour
     //내가 최종적으로 알고 싶은것은 선발된 3명
     public GameObject[] parties = new GameObject[3];
 
-    public Inventory _invetory;
+    private Inventory _invetory;
 
     public List<GameObject> slots = new List<GameObject>();
 
     public GameObject[] party_slots = new GameObject[3];
     public GameObject[] party_heros = new GameObject[3];
+
+    private void Awake()
+    {
+        _invetory = transform.GetComponent<Inventory>();
+    }
 
     private void OnEnable()
     {
