@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionsCollection>
+  <Questions>
+    <Question name ="김한호는 프로그래밍의 신이다.">
+    <Answer>True</Answer>
+    </Question>
+
+    <Question name ="김태규의 연구실은 복지가 뛰어나다.">
+    <Answer>False</Answer>
+    </Question>
+
+    <Question name ="김태규는 진실만을 말한다.">
+    <Answer>False</Answer>
+    </Question>
+
+    <Question name ="엄성용은 한 여자만을 사랑한다.">
+    <Answer>False</Answer>
+    </Question>
+
+    <Question name ="영진이는 못생겼다.">
+    <Answer>False</Answer>
+    </Question>
+
+    <Question name ="세계 최고의 미남은 정원조이다.">
+    <Answer>True</Answer>
+    </Question>
+
+    <Question name ="김지택은 붕가붕가라는 게임을 제작한 적이 있다.">
+    <Answer>True</Answer>
+    </Question>
+
+    <Question name ="집에 가고싶다.">
+    <Answer>True</Answer>
+    </Question>
+
+  </Questions>
+</QuestionsCollection>
