@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
 	{
-		AdManager.instance.gamesPlayed++;
+		//AdManager.instance.gamesPlayed++;
 		SoundStatus ();
 		score = 0;                                 //at start we want score to be zero
         isBoss = true;
